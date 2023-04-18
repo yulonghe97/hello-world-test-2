@@ -1,0 +1,16 @@
+name = "hello-world-test-2"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "hello-world-test-2_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "hello-world-test-2.wasm"
+command = "npm run build:release"
